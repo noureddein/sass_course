@@ -1,2 +1,37 @@
-*{-webkit-box-sizing:border-box;box-sizing:border-box}.contact{padding:20px;margin:20px}
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contact {
+  padding: 20px;
+  margin: 20px;
+}
+
+.header {
+  background-color: green;
+}
+
+.footer {
+  background-color: black;
+}
+
+.container {
+  background-color: gray;
+}
+
+.copyright {
+  background-color: gray;
+}
+
+.sidebar {
+  background-color: orange;
+  color: violet;
+}
+
+@media (max-width: 767px) {
+  .sidebar {
+    padding: 20px;
+  }
+}
 /*# sourceMappingURL=main.css.map */

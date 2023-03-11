@@ -1,5 +1,44 @@
 ﻿// Import global rules
-@use './SASS/layout/global-rules';
+@use "./SASS/layout/global-rules";
 
 // Import pages
-@use './SASS/pages/contact';
+@use "./SASS/pages/contact";
+
+// Import variables
+@use "./SASS/variables/colors";
+
+// Global variables
+$alt_color: green;
+
+.header {
+    background-color: $alt_color;
+}
+
+.footer {
+    $alt_color: black;
+
+    background-color: $alt_color;
+}
+
+.container {
+    $alt_color: gray !global;
+
+    background-color: $alt_color;
+}
+
+.copyright {
+    background-color: $alt_color;
+}
+
+.sidebar {
+    background-color: colors.$main;
+    color: colors.$alt;
+}
+
+$max_mobile: "max-width: 767px";
+
+@media ($max_mobile) {
+    .sidebar {
+        padding: 20px;
+    }
+}
