@@ -54,7 +54,7 @@
 
 ---
 
-## **Lesson 3**
+## **Lesson 4**
 
 ### Variables
 - Variables in SASS works like any programming language
