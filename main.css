@@ -34,4 +34,75 @@
     padding: 20px;
   }
 }
+.parent {
+  font-size: 16px;
+}
+.parent .child {
+  font-size: 16px;
+}
+.parent .child .grand-child {
+  font-size: 16px;
+}
+
+.parent-one,
+.parent-two {
+  padding: 20px;
+}
+.parent-one .child,
+.parent-two .child {
+  padding: 10px;
+}
+
+.parent > .child {
+  font-size: 10px;
+}
+.parent > .test {
+  padding: 5px;
+}
+
+.parent > .child {
+  font-size: 10px;
+}
+.parent .test {
+  padding: 5px;
+}
+.parent + p {
+  padding: 12px;
+}
+
+.parent > .element-one {
+  font-size: 10px;
+}
+.parent > .element-two {
+  font-size: 10px;
+}
+.parent .not-direct-child {
+  font-weight: bold;
+}
+
+.box .title {
+  font-size: 14px;
+}
+.box .description {
+  font-size: 12px;
+}
+.box.red {
+  background-color: red;
+}
+.box.green {
+  background-color: green;
+}
+.box:hover {
+  /*  Pseudo class */
+  background-color: green;
+}
+.box:hover .title {
+  font-weight: bold;
+}
+:not(.box) {
+  font-weight: normal;
+}
+[dir=rtl] .box {
+  direction: rtl;
+}
 /*# sourceMappingURL=main.css.map */
