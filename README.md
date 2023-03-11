@@ -94,3 +94,91 @@ $alt_color: green;
 - To import a file contain the variables:
   - ( @use './SASS/variables/_colors.scss' as *; ) then we can use the variable.
   - ( @use './SASS/variables/_colors.scss'; ) then we can use the variable $colors.$var_name.
+
+---
+
+## **Lesson 5**
+
+- SASS have a feature called nesting its like object to define the properties.
+```CSS
+.parent{
+    font-size: 16px;
+    .child{
+        font-size: 16px;
+        .grand-child{
+            font-size: 16px;    
+        }
+    }
+}
+```
+
+- Direct element
+```CSS
+.parent > {
+    .child {
+        font-size: 10px;
+    }
+
+    .test {
+        padding: 5px;
+    }
+}
+```
+- Grouping
+```CSS
+.parent-one,
+.parent-two {
+    padding: 20px;
+    .child {
+        padding: 10px;
+    }
+}
+```
+
+- Multi class for the same element
+
+```CSS
+.box{
+    .title{
+        font-size: 14px;
+    }
+
+    .description{
+        font-size: 12px;
+    }
+
+    &.red{
+        background-color: red;
+    }
+
+    &.green{
+        background-color: green;
+    }
+}
+```
+- Pseudo class
+```CSS
+.box{
+    .title{
+        font-size: 14px;
+    }
+
+    .description{
+        font-size: 12px;
+    }
+
+    &.red{
+        background-color: red;
+    }
+
+    &.green{
+        background-color: green;
+    }
+
+    /*  Pseudo class */
+    &:hover{
+        background-color: green;
+    }
+}
+
+```
