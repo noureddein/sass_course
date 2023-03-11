@@ -51,3 +51,46 @@
 - Folder for the layout files contain the global file.
   - The global file contain the rules for the whole website e.g. *, body, button, a, ...
   - The files prefixed with the (_) underscore prevent the compiler from compiling the file.
+
+---
+
+## **Lesson 3**
+
+### Variables
+- Variables in SASS works like any programming language
+  - Global variables
+  - Local variables
+- In CSS the property take the name of the variable not the value.
+```CSS
+:root{
+    --main-color: red
+}
+
+.header{
+    background-color: var(--main-color);
+}
+```
+- In SASS the property take the value of the variable.
+
+```CSS
+// Before compile
+
+$alt_color: green;
+
+.header{
+    background-color: $alt_color;
+}
+```
+
+```CSS
+// After compile
+
+.header{
+    background-color: green;
+}
+```
+
+- To overwrite a global variable from a local scop we use the !global flag.
+- To import a file contain the variables:
+  - ( @use './SASS/variables/_colors.scss' as *; ) then we can use the variable.
+  - ( @use './SASS/variables/_colors.scss'; ) then we can use the variable $colors.$var_name.
