@@ -22,3 +22,20 @@
 - Advanced structure
 
 ---
+
+## **Lesson 2**
+
+### Websites to try SASS
+- [sassmeister](https://www.sassmeister.com/)
+- [code pen](https://www.codepen.io)
+### How to compile SASS?
+- We can compile the SASS by using an extension in VS Code called **Live SASS compiler**.
+- With desktop applications Koala and Prepros 
+- With npm packages like SASS.
+
+
+### Ways to write SASS
+- **SCSS**: Written like CSS with curly braces.
+- **SASS**: Written like Python language depending on indentation. 
+
+---
