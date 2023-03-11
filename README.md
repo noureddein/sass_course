@@ -39,3 +39,15 @@
 - **SASS**: Written like Python language depending on indentation. 
 
 ---
+
+## **Lesson 3**
+
+#### **_NOTES:_** During working with the SASS files, this stage called developing. But when the files compiled and compressed to CSS files, these files called production files.
+
+### How to import SASS files?
+- To import SASS files we use the ( @use ) method to import the files, the ( @import ) method deprecated.
+
+### How to structure your project SASS files?
+- Folder for the layout files contain the global file.
+  - The global file contain the rules for the whole website e.g. *, body, button, a, ...
+  - The files prefixed with the (_) underscore prevent the compiler from compiling the file.
